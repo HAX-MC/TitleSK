@@ -1,0 +1,6 @@
+command /title [<text>]:
+  permission: hey.title
+  permission message: "You dont have perms!"
+  trigger:
+    loop all players:
+      send title "&k&4&l!! &e&lANNOUNCEMENT &k&4&l!!" with subtitle "&6%arg-1%" to loop-player
